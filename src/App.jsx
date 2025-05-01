@@ -8,10 +8,12 @@ import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BlurBlob from './components/BlurBlob';
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   return (
     <div className="bg-[#050414]">
+      <Analytics />
 
        <BlurBlob position={{ top: '35%', left: '20%' }} size={{ width: '30%', height: '40%' }} />
 
