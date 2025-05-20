@@ -31,7 +31,7 @@ import clgLogo from './assets/education_logo/clg.png';
 import pokeLogo from './assets/work_logo/poke.png';
 import taskLogo from './assets/work_logo/task.png';
 import typeLogo from './assets/work_logo/type.png';
-
+import ytlogo from './assets/work_logo/favicon.ico'
 
 export const SkillsInfo = [
   {
@@ -145,5 +145,15 @@ export const SkillsInfo = [
       tags: ["Python", "Turtle"],
       github: "https://github.com/Axit3376/TypeRush",
       webapp: "https://movie-recommendation-app-jet.vercel.app/",
+    },  
+    {
+      id: 3,
+      title: "Youtube 2.0",
+      description:
+        "A lightweight YouTube clone web application that allows users to browse, search, and watch videos with a clean and responsive interface.",
+      // image:
+      tags: ["React", "HTML", "CSS","JavaScript"],
+      github: "https://github.com/Axit3376/Youtube-Clone",
+      webapp: "https://youtube-clone-lyart-eight.vercel.app/",
     },  
   ];  
