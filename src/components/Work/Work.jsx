@@ -112,13 +112,22 @@ const Work = () => {
                     View Code
                   </a>
                   <a
-                    href={selectedProject.webapp}
+                    href={selectedProject.webapp ? selectedProject.webapp : undefined}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    onClick={e => {
+                      if (!selectedProject.webapp) {
+                        e.preventDefault();
+                        window.alert("This project is not deployed yet. Please refer to GitHub.");
+                        // Optionally, open GitHub in a new tab:
+                        window.open(selectedProject.github, "_blank", "noopener,noreferrer");
+                      }
+                    }}
                   >
                     View Live
-                  </a>
+                    </a>
+
                 </div>
               </div>
             </div>

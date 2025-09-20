@@ -17,6 +17,11 @@ import postmanLogo from './assets/tech_logo/postman.png';
 import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 import postgreLogo from './assets/tech_logo/postgre.png';
+import pandasLogo from './assets/tech_logo/pandas.png'
+import numpyLogo from './assets/tech_logo/numpy.png';
+import matLogo from './assets/tech_logo/matplotlib.png';
+import sciLogo from './assets/tech_logo/scikit.png';
+import tensorLogo from './assets/tech_logo/tensort.png';
 
 
 // Experience Section Logo's
@@ -31,7 +36,9 @@ import clgLogo from './assets/education_logo/clg.png';
 import pokeLogo from './assets/work_logo/poke.png';
 import taskLogo from './assets/work_logo/task.png';
 import typeLogo from './assets/work_logo/type.png';
-import ytlogo from './assets/work_logo/favicon.ico'
+import ytLogo from './assets/work_logo/Youtube.png';
+import heartLogo from './assets/work_logo/heart.png';
+import calLogo from './assets/work_logo/cal.png';
 
 export const SkillsInfo = [
   {
@@ -59,7 +66,16 @@ export const SkillsInfo = [
     skills: [
       { name: 'C++', logo: cppLogo },
       { name: 'Python', logo: pythonLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
+    ],
+  },
+  {
+    title: 'Libraries',
+    skills: [
+      { name: 'Pandas', logo: pandasLogo },
+      { name: 'NumPy', logo: numpyLogo },
+      { name: 'Matplotlib', logo: matLogo },
+      { name: 'Scikit-Learn', logo: sciLogo },
+      { name: 'Tensor-Flow', logo: tensorLogo },
     ],
   },
   {
@@ -91,7 +107,7 @@ export const SkillsInfo = [
       img: ditLogo,
       school: "DY Patil Institute of Technology",
       date: "Aug 2023 - June 2027",
-      grade: "9.5 CGPA",
+      grade: "9.32 CGPA",
       desc: "I am doing my Bachelor's degree in Artificial Intelligence & Data Science (B.E) from DIT, Pune.",
       degree: "Bachelor of Engineering - BE (Artificial Intelligence & Data Science)",
     },
@@ -116,8 +132,26 @@ export const SkillsInfo = [
   ];
   
   export const projects = [
-    {
+      {
       id: 0,
+      title: "California Housing Price Predictor",
+      description:
+        "A jupyter notebook that predicts California housing prices based on user-input features using a trained machine learning model. Includes data preprocessing, model inference, and a clean interactive interface.",
+      image:calLogo,
+      tags: ["Python", "Streamlit", "Pandas", "NumPy", "Matplotlib", "Scikit-Learn"],
+      github: "https://github.com/Axit3376/California-Housing-Price-Predictor",
+    },
+     {
+      id: 1,
+      title: "Heart Disease Predictor",
+      description:
+        "A jupyter notebook that predicts California housing prices based on user-input features using a trained machine learning model. Includes data preprocessing, model inference, and a clean interactive interface.",
+      image: heartLogo,
+      tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-Learn"],
+      github: "https://github.com/Axit3376/Heart-Disease-Prediction",
+    },
+    {
+      id: 2,
       title: "PokeQuiz",
       description:
       "A simple web-based Pokémon quiz game where users can guess the names of Pokémon and earn points for correct answers.",
@@ -127,7 +161,7 @@ export const SkillsInfo = [
       webapp: "https://axit3376.github.io/PokeQuiz/",
     },
     {
-      id: 1,
+      id: 3,
       title: "TaskPulse",
       description:
         "TaskPulse is a task management application designed to help users manage and track their tasks efficiently. It includes functionalities such as adding, viewing, editing, deleting tasks, and sending daily reminders via email for tasks that are due soon..",
@@ -137,7 +171,7 @@ export const SkillsInfo = [
       // webapp: "https://csprep.netlify.app/",
     },
     {
-      id: 2,
+      id: 4,
       title: "TypeRush",
       description:
         "TypeRush is a fun and user-friendly desktop typing speed test application built with Python and Tkinter. It helps you improve your typing speed and accuracy in a visually appealing, responsive interface with real-time feedback and stats.",
@@ -147,11 +181,11 @@ export const SkillsInfo = [
       webapp: "https://movie-recommendation-app-jet.vercel.app/",
     },  
     {
-      id: 3,
+      id: 5,
       title: "Youtube 2.0",
       description:
         "A lightweight YouTube clone web application that allows users to browse, search, and watch videos with a clean and responsive interface.",
-      // image:
+      image:ytLogo,
       tags: ["React", "HTML", "CSS","JavaScript"],
       github: "https://github.com/Axit3376/Youtube-Clone",
       webapp: "https://youtube-clone-lyart-eight.vercel.app/",

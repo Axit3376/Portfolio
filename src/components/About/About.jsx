@@ -25,9 +25,10 @@ const About = () => {
             <span className="text-white">I am a </span>
             <ReactTypingEffect
               text={[
-                'Fullstack Developer',
+                'Machine Learning Student',
                 'Python Developer',
-                'Coder',
+                'Data Analyst',
+                'FullStack Developer'
               ]}
               speed={100}
               eraseSpeed={80}
@@ -46,7 +47,7 @@ const About = () => {
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/13jiDa3hh_97-VJaurd9hs3e0hiU63sce/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1s22husfzRWyOhccD7obPSLupMhAyTeEp/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
