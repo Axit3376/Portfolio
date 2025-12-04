@@ -39,6 +39,7 @@ import typeLogo from './assets/work_logo/type.png';
 import ytLogo from './assets/work_logo/Youtube.png';
 import heartLogo from './assets/work_logo/heart.png';
 import calLogo from './assets/work_logo/cal.png';
+import movieLogo from './assets/work_logo/movie.png'
 
 export const SkillsInfo = [
   {
@@ -182,12 +183,12 @@ export const SkillsInfo = [
     },  
     {
       id: 5,
-      title: "Youtube 2.0",
+      title: "The Movie House",
       description:
-        "A lightweight YouTube clone web application that allows users to browse, search, and watch videos with a clean and responsive interface.",
-      image:ytLogo,
-      tags: ["React", "HTML", "CSS","JavaScript"],
-      github: "https://github.com/Axit3376/Youtube-Clone",
-      webapp: "https://youtube-clone-lyart-eight.vercel.app/",
+        "A lightweight movie search app where u can search for any movies you want!",
+      image:movieLogo,
+      tags: ["React", "HTML", "TailwindCSS","JavaScript", "API"],
+      github: "https://github.com/Axit3376/The-Movie-House/tree/main",
+      webapp: "https://axit3376.github.io/The-Movie-House/",
     },  
   ];  
