@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   // Smooth scroll function
@@ -38,10 +38,7 @@ const Footer = () => {
         {/* Social Media Icons - Responsive */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
-            { icon: <FaTwitter />, link: "https://x.com/adit4437" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/aditya-shekhar-58a278223/" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/axit4437/" },
-            
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/aditya-s-58a278223/" },
           ].map((item, index) => (
             <a
               key={index}
@@ -57,7 +54,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-          © 2025 Aditya Shekhar. All rights reserved.
+          © 2026 Aditya Shekhar. All rights reserved.
         </p>
       </div>
     </footer>

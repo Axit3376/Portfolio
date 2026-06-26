@@ -12,11 +12,10 @@ import cppLogo from './assets/tech_logo/cpp.png';
 import pythonLogo from './assets/tech_logo/python.png';
 import gitLogo from './assets/tech_logo/git.png';
 import githubLogo from './assets/tech_logo/github.png';
-import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
-import netlifyLogo from './assets/tech_logo/netlify.png';
-import vercelLogo from './assets/tech_logo/vercel.png';
 import postgreLogo from './assets/tech_logo/postgre.png';
+import fastAPILogo from './assets/tech_logo/fastapi.png';
+import javaLogo from './assets/tech_logo/java.png';
 import pandasLogo from './assets/tech_logo/pandas.png'
 import numpyLogo from './assets/tech_logo/numpy.png';
 import matLogo from './assets/tech_logo/matplotlib.png';
@@ -34,12 +33,10 @@ import clgLogo from './assets/education_logo/clg.png';
 
 // Project Section Logo's
 import pokeLogo from './assets/work_logo/poke.png';
-import taskLogo from './assets/work_logo/task.png';
-import typeLogo from './assets/work_logo/type.png';
-import ytLogo from './assets/work_logo/Youtube.png';
-import heartLogo from './assets/work_logo/heart.png';
 import calLogo from './assets/work_logo/cal.png';
-import movieLogo from './assets/work_logo/movie.png'
+import movieLogo from './assets/work_logo/movie.png';
+import dataLensLogo from './assets/work_logo/datalens.png';
+import customerChurnLogo from './assets/work_logo/customerchurn.png';
 
 export const SkillsInfo = [
   {
@@ -58,6 +55,7 @@ export const SkillsInfo = [
     skills: [
       { name: 'Node JS', logo: nodejsLogo },
       { name: 'Express JS', logo: expressjsLogo },
+      { name: 'FastAPI', logo: fastAPILogo },
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'PostgreSQL', logo: postgreLogo },
     ],
@@ -67,6 +65,7 @@ export const SkillsInfo = [
     skills: [
       { name: 'C++', logo: cppLogo },
       { name: 'Python', logo: pythonLogo },
+      { name: 'Java', logo: javaLogo },
     ],
   },
   {
@@ -84,10 +83,7 @@ export const SkillsInfo = [
     skills: [
       { name: 'Git', logo: gitLogo },
       { name: 'GitHub', logo: githubLogo },
-      { name: 'VS Code', logo: vscodeLogo },
       { name: 'Postman', logo: postmanLogo },
-      { name: 'Vercel', logo: vercelLogo },
-      { name: 'Netlify', logo: netlifyLogo },
     ],
   },
 ];
@@ -133,26 +129,36 @@ export const SkillsInfo = [
   ];
   
   export const projects = [
-      {
+    {
       id: 0,
-      title: "California Housing Price Predictor",
+      title: "DataLens",
       description:
-        "A jupyter notebook that predicts California housing prices based on user-input features using a trained machine learning model. Includes data preprocessing, model inference, and a clean interactive interface.",
-      image:calLogo,
-      tags: ["Python", "Streamlit", "Pandas", "NumPy", "Matplotlib", "Scikit-Learn"],
-      github: "https://github.com/Axit3376/California-Housing-Price-Predictor",
+        "A comprehensive data visualization and analysis platform that transforms complex datasets into intuitive, interactive visualizations. Features real-time data processing, customizable dashboards, and advanced analytics capabilities.",
+      image: dataLensLogo,
+      tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Plotly", "FastAPI", "HTML", "CSS"],
+      github: "https://github.com/Axit3376/Data-Lens",
+      webapp: "https://datalens-1vzm.onrender.com/"
     },
-     {
+    {
       id: 1,
-      title: "Heart Disease Predictor",
+      title: "Customer Churn Prediction",
       description:
-        "A jupyter notebook that predicts California housing prices based on user-input features using a trained machine learning model. Includes data preprocessing, model inference, and a clean interactive interface.",
-      image: heartLogo,
-      tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-Learn"],
-      github: "https://github.com/Axit3376/Heart-Disease-Prediction",
+        "A machine learning model that predicts customer churn using historical customer data and behavioral patterns. Includes data preprocessing, feature engineering, model evaluation, and actionable insights for retention strategies.",
+      image: customerChurnLogo,
+      tags: ["Python", "Pandas", "NumPy", "Scikit-Learn", "Machine Learning"],
+      github: "https://github.com/Axit3376/Telecom-Churn",
     },
     {
       id: 2,
+      title: "California Housing Price Predictor",
+      description:
+        "A jupyter notebook that predicts California housing prices based on user-input features using a trained machine learning model. Includes data preprocessing, model inference, and a clean interactive interface.",
+      image: calLogo,
+      tags: ["Python", "Streamlit", "Pandas", "NumPy", "Matplotlib", "Scikit-Learn"],
+      github: "https://github.com/Axit3376/California-Housing-Price-Predictor",
+    },
+    {
+      id: 3,
       title: "PokeQuiz",
       description:
       "A simple web-based Pokémon quiz game where users can guess the names of Pokémon and earn points for correct answers.",
@@ -162,31 +168,11 @@ export const SkillsInfo = [
       webapp: "https://axit3376.github.io/PokeQuiz/",
     },
     {
-      id: 3,
-      title: "TaskPulse",
-      description:
-        "TaskPulse is a task management application designed to help users manage and track their tasks efficiently. It includes functionalities such as adding, viewing, editing, deleting tasks, and sending daily reminders via email for tasks that are due soon..",
-      image: taskLogo,
-      tags: ["Python", "SMTPLIB", "JSON", "Schedule"],
-      github: "https://github.com/Axit3376/TaskPulse",
-      // webapp: "https://csprep.netlify.app/",
-    },
-    {
       id: 4,
-      title: "TypeRush",
-      description:
-        "TypeRush is a fun and user-friendly desktop typing speed test application built with Python and Tkinter. It helps you improve your typing speed and accuracy in a visually appealing, responsive interface with real-time feedback and stats.",
-      image: typeLogo,
-      tags: ["Python", "Turtle"],
-      github: "https://github.com/Axit3376/TypeRush",
-      webapp: "https://movie-recommendation-app-jet.vercel.app/",
-    },  
-    {
-      id: 5,
       title: "The Movie House",
       description:
         "A lightweight movie search app where u can search for any movies you want!",
-      image:movieLogo,
+      image: movieLogo,
       tags: ["React", "HTML", "TailwindCSS","JavaScript", "API"],
       github: "https://github.com/Axit3376/The-Movie-House/tree/main",
       webapp: "https://axit3376.github.io/The-Movie-House/",
